@@ -23,7 +23,7 @@ public:
     }
     int findProduct(string name)
     {
-        for (size_t i = 0; i < numProduct; i++)
+        for (size_t i = findProduct(name); i < numProduct; i++)
         {
             if (products[i].name == name)
                 return i;
@@ -32,11 +32,29 @@ public:
     }
     void editProduct(string name, Product newProcut)
     {
-        for (size_t i = 0; i < numProduct; i++)
+        if (findProduct(name) != -1)
         {
-            if (products[i].name == name)
-                products[i] = newProcut;
+            for (size_t i = findProduct(name); i < numProduct; i++)
+            {
+                if (products[i].name == name)
+                    products[i] = newProcut;
+            }
         }
+    }
+    void saleProduct(string name)
+    {
+        if (findProduct(name) != -1)
+        {
+            for (size_t i = findProduct(name); i < numProduct; i++)
+            {
+                products[i] = products[i + 1];
+
+            }
+        }
+    }
+    void buyProduct()
+    {
+
     }
 
 private:

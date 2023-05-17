@@ -130,6 +130,7 @@
     <ClCompile Include="Studying.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Linkedlist.h" />
     <ClInclude Include="Stack.h" />
     <ClInclude Include="SaleSystem.h" />
   </ItemGroup>

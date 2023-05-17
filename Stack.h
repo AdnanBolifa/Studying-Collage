@@ -4,7 +4,7 @@
 class Stack
 {
 public:
-	static const int MAX = 100;
+	static const int MAX = 100;			
 	int top = -1;
 
 	Product products[MAX];
